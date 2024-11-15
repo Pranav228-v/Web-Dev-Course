@@ -1,0 +1,13 @@
+<DOCTYPE html>
+    <html>
+        <head>
+<title>Introduction</title>
+        </head>
+        <body>
+            <h1>I am Codingal</h1>
+            I am <i>2 years old</i><br>
+            My address is HSR layout, Bengaluru.<br>
+            My Favourite subjects are <mark>Science</mark> and <mark>Maths</mark>.<br>
+            My hobbies include coding and solving problems.<br>My favourite quote is<br><mark><q>Programming is not about what you knew, its about what you can figure out.</mark></q>
+        </body>
+        </html>
