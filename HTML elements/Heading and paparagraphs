@@ -12,5 +12,12 @@
     <h5>Welcome to codingal lets get started with coding</h5>
     <h6>Welcome to codingal lets get started with coding</h6>
     <p>A p tag is used to represent a paragraph</p>
+<strong>Welcome to codingal lets get started with coding</strong><br>
+<i>Welcome to codingal lets get started with coding</i><br>
+<em>Welcome to codingal lets get started with coding</em><br>
+<small>Welcome to codingal lets get started with coding</small><br>
+<mark>Welcome to codingal lets get started with coding</mark><br>
+<del>Welcome to codingal.....lets get started with coding</del><br>
+Welcome <sup>to codingal</sup> lets get started with <sub>coding</sub>
 </body>
 </html>
