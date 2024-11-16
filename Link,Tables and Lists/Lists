@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Unordered List</h2>
+    <ul>
+        <li>Home</li>
+        <li>About Us</li>
+        <li>Contact Us</li>
+    </ul>
+    <h2>Ordered List</h2>
+    <ol>
+        <li>Home</li>
+        <li>About Us</li>
+        <li>Contact Us</li>
+    </ol>
+    <h2>Desc List</h2>
+    <dl>
+        <dt>Home</dt>
+        <dd>It will show home screen</dd>
+        <dt>About Us</dt>
+        <dd>It will tell you about the company</dd>
+        <dt>Contact Us</dt>
+        <dd>It will give you the address and contact numbers</dd>
+    </dl>
+</body>
+</html>
