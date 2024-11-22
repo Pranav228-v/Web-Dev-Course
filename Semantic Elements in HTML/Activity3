@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Navigational Links</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#posts">Posts</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <article>
+                    <h2>Facts about dogs</h2>
+                    <p>
+                        The dog (Canis familiaris or Canis lupus familiaris) is a domesticated descendant of the wolf. Also called the domestic
+                        dog, it was selectively bred from an extinct population of wolves during the Late Pleistocene by hunter-gatherers. The
+                        dog was the first species to be domesticated by humans, over 14,000 years ago and before the development of agriculture.
+                        Experts estimate that due to their long association with humans, dogs have gained the ability to thrive on a starch-rich
+                        diet that would be inadequate for other canids.
+                    </p>
+                </article>
+                <aside>
+                    Dogs have been bred for desired behaviors, sensory capabilities, and physical attributes. Dog breeds vary widely in
+                    shape, size, and color. They have the same number of bones (with the exception of the tail), powerful jaws that house
+                    around 42 teeth, and well-developed senses of smell, hearing, and sight. Compared to humans, dogs have an inferior
+                    visual acuity, a superior sense of smell, and a relatively large olfactory cortex. They perform many roles for humans,
+                    such as hunting, herding, pulling loads, protection, companionship, therapy, aiding disabled people, and assisting
+                    police and the military.
+                </aside>
+            </section>
+            <figure>
+                <img src="cute dog.jpeg"/>
+                <figcaption>A cute dog</figcaption>
+            </figure>
+            <audio controls>
+                <source src="dog-barking-70772.mp3" type="audio/mp3">
+            </audio>
+            <video src="Dog_gif.gif"></video>
+            <embed src="Dog_gif.gif"/>
+        </main>
+        <footer>
+            <p>Contact me on 9740080333</p>
+        </footer>
+    </body>
+    
+</html>
