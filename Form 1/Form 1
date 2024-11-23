@@ -8,6 +8,8 @@
   <body>
     <h1>Personal Details Form</h1>
     <form>
+        <fieldset>
+            <legend>Personal Information</legend>
         <lable>Name</lable><br>
         <input type="text" id="name"><br><br>
         <label>Email ID</label><br>
@@ -20,7 +22,10 @@
         <label>Favourite City</label><br>
         <input type="checkbox" id="city" value="new delhi">New Delhi<br>
         <input type="checkbox" id="city" value="mumbai">Mumbai<br>
+        <label>Birthday</label>
+        <input type="date" id="birthday" name="birthday"><br>
         <input type="submit">
+        </fieldset>
     </form>
   </body>
 </html>
