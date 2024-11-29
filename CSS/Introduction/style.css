@@ -5,25 +5,25 @@
 }
 /* external css*/
 h3{
-    color:blue;
+    color:blueviolet;
 }
 
 /* element selector */
 h4{
-    color:palevioletred;
+    color:cyan;
 }
 
 /* class selector */
 .myclass{
-    color:darkorange;
+    color:orange;
 }
 
 /* id selector */
 #myid{
-    color:mediumpurple;
+    color:darkcyan;
 }
 
 /* group selector */
 h5,p{
-    color:maroon;
+    color:darkolivegreen;
 }
