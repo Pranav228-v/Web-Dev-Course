@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Javascript on await and asynchronous function</h2>
+        <h1 id="product"></h1>
+        <script>
+            async function multiply(a,b) {
+                let response = await a * b;
+                display(response);
+            }
+            function display (some) {
+                document.getElementById("product").innerHTML= some;
+            }
+            multiply(20,5);
+        </script>
+    </body>
+</html>
