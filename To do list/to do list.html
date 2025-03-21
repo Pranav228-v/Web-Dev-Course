@@ -18,7 +18,7 @@
             var myForm = document.getElementById("myForm");
             var myInput = document.getElementById("myInput");
             var myItem = document.getElementById("myItem");
-            myForm.addEventLIstener("submit",
+            myForm.addEventListener("submit",
                 function (event){
                     event.preventDefault();
                     createItem(myInput.value);
