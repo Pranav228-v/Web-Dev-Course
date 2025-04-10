@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Number Clicker</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            /* Stack items vertically */
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            /* Full viewport height */
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+
+        #numberDisplay {
+            font-size: 4rem;
+            /* Large font for the number */
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 30px;
+            min-height: 70px;
+            /* Prevent layout shift when text changes */
+            text-align: center;
+        }
+
+        #controlButton {
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            transition: background-color 0.2s ease;
+        }
+
+        #controlButton:hover {
+            background-color: #1200b3;
+        }
+
+        #clickCountDisplay {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="numberDisplay">Click the button!</div>
+
+    <button id="controlButton">Click Me</button>
+
+    <div id="clickCountDisplay">Clicks: 0</div>
+
+    <script>
+        // Get references to the HTML elements
+        const numberDisplay = document.getElementById('numberDisplay');
+        const controlButton = document.getElementById('controlButton');
+        const clickCountDisplay = document.getElementById('clickCountDisplay');
+
+        // State variables
+        let clickCount = 0;
+        let isRunning = false;
+        let intervalId = null; // To store the ID from setInterval
+
+        // Function to update the number display
+        function updateNumber() {
+            const randomNumber = Math.floor(Math.random() * 100) + 1; // Random number 1-100
+            numberDisplay.textContent = randomNumber;
+        }
+
+        // Function to handle button clicks
+        function handleClick() {
+            clickCount++;
+            clickCountDisplay.textContent = `Clicks: ${clickCount}`;
+
+            // Check if click count is EVEN
+            if (clickCount % 2 === 0) {
+                // --- Start or Continue Changing ---
+                if (!isRunning) { // Only start if not already running
+                    console.log(`Click ${clickCount} (Even): Starting number generation.`);
+                    isRunning = true;
+                    controlButton.textContent = 'Stop Changing';
+                    // Start the interval timer, update number every 100ms
+                    intervalId = setInterval(updateNumber, 100);
+                    // Run once immediately so user doesn't wait 100ms
+                    updateNumber();
+                } else {
+                    console.log(`Click ${clickCount} (Even): Already running.`);
+                }
+            }
+            // Check if click count is ODD
+            else {
+                // --- Stop Changing ---
+                if (isRunning) {
+                    console.log(`Click ${clickCount} (Odd): Stopping number generation.`);
+                    isRunning = false;
+                    controlButton.textContent = 'Start Changing';
+                    // Clear the interval timer
+                    clearInterval(intervalId);
+                    intervalId = null; // Reset the interval ID
+                } else {
+                    console.log(`Click ${clickCount} (Odd): Already stopped.`);
+                    controlButton.textContent = 'Start Changing';
+                    // Optional: Display a single random number on the first click
+                    if (clickCount === 1) {
+                        updateNumber();
+                    }
+                }
+            }
+        }
+
+        // Attach the handleClick function to the button's click event
+        controlButton.addEventListener('click', handleClick);
+
+    </script>
+
+</body>
+
+</html>
